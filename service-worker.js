@@ -2,7 +2,6 @@ const CACHE_NAME = "jelajahsemesta-v.1.0";
 let urlsToCache = [
    "/",
    "/manifest.json",
-   "/.htaccess",
    "/index.html",
    "/font/MaterialIcon.woff2",
    "/font/Nunito.ttf",
