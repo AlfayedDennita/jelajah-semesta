@@ -154,9 +154,6 @@ nav ul a:hover {
    nav h1 a.brand-logo {
       font-size: 1.5rem;
    }
-   #big-title br {
-      display: block;
-   }
 }
 
 /*---------- Content Style ----------*/
@@ -294,7 +291,7 @@ main form button.btn, main form button.btn:hover, main form button.btn:focus {
 
 .page-footer {
    padding: 0;
-   border-top: 2px solid rgb(243, 156, 18, 0.5);
+   border-top: 2px solid rgba(243, 156, 18, 0.5);
    background: transparent;
 }
 
