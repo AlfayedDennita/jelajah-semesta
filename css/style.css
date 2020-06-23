@@ -1,0 +1,317 @@
+/*---------- General Style ----------*/
+
+* {
+   scroll-behavior: smooth;
+}
+
+::selection{
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #1c1c1c;
+}
+
+body {
+   font-family: "Nunito", Arial, sans-serif;
+   background-color: #1c1c1c;
+   color: #fff;
+}
+
+.custom-link {
+   color: #f39c12;
+   font-weight: bold;
+}
+
+.custom-btn, .custom-btn:focus {
+   background-color: #f39c12;
+}
+
+.custom-btn:hover {
+   background-color: #fff;
+   color: #f39c12;
+}
+
+/*---------- Header Style ----------*/
+
+header {
+   position: relative;
+   background-image: url("../img/big.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   padding-bottom: 1rem;
+}
+
+header::before {
+   content: "";
+   bottom: 0;
+   left: 0;
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 50%;
+   background: linear-gradient(to top, rgba(28, 28, 28, 1), rgba(28, 28, 28, 0));
+}
+
+/*--- Top Nav ---*/
+
+nav {
+   background: transparent;
+   box-shadow: none;
+}
+
+nav h1 {
+   margin: 0;
+   line-height: 100%;
+   font-family: "PT Sans", Arial, sans-serif;
+}
+
+nav ul a {
+   display: inline;
+   margin: 0 5px;
+   padding: 0.5rem 10px;
+   transition: none;
+}
+
+nav ul li:first-child a {
+   margin-left: 0;
+}
+
+nav ul li:last-child a {
+   margin-right: 0;
+}
+
+nav ul a:hover {
+   background: transparent;
+   border-bottom: 2px solid #fff;
+}
+
+/*--- Side Nav ---*/
+
+.sidenav {
+   background-color: #1c1c1c;
+}
+
+.sidenav img {
+   width: 50px;
+   margin-top: 1rem;
+}
+
+.sidenav .brand-title {
+   color: rgba(255, 255, 255, 0.5);
+   margin: 0 auto;
+}
+
+.sidenav .version {
+   color: rgba(255, 255, 255, 0.5);
+   margin-top: 0;
+}
+
+.sidenav ul {
+   margin: 0;   
+}
+
+.sidenav li > a {
+   transition: 0.3s;
+   color: #fff;
+}
+
+.sidenav li > a:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*--- Big Title ---*/
+
+#big-title {
+   position: relative;
+   z-index: 1;
+   padding: 10rem;
+}
+
+#big-title h2 {
+   font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+#big-title h3 {
+   font-size: 1.5rem;
+}
+
+#big-title br {
+   display: none;
+}
+
+/*--- Responsive ---*/
+
+@media (min-width: 600px) {
+   #big-title h2 {
+      font-size: 3.5rem;
+   }
+}
+
+@media (max-width: 600px) {
+   #big-title {
+      padding: 5rem 0;
+   }
+   nav h1 a.brand-logo {
+      font-size: 1.5rem;
+   }
+   #big-title br {
+      display: block;
+   }
+}
+
+/*---------- Content Style ----------*/
+
+main {
+   padding: 2rem 0;
+   min-height: 10rem;
+}
+
+main .container h4 {
+   display: inline-block;
+   padding-bottom: 5px;
+   margin-bottom: 2rem;
+   border-bottom: 3px solid #f39c12;
+}
+
+.error-notification {
+   padding: 5rem 0;
+}
+
+.error-notification i {
+   color: #f39c12;
+   font-size: 5rem;
+}
+
+.card {
+   background-color: #1a1a1a;
+}
+
+.card .card-image img {
+   height: 300px;
+   object-fit: cover;
+}
+
+.card .card-content .object-title {
+   display: inline-block;
+   background-color: #f39c12;
+   border-radius: 5px 0;
+   padding: 3px 10px;
+   margin-bottom: 10px;
+}
+
+.navigation {
+   margin-top: 3rem;
+}
+
+/*--- About ---*/
+
+main .about h5 {
+   margin-top: 10px;
+   margin-bottom: 5px;
+   font-family: "PT Sans", Arial, sans-serif;
+   font-size: 1.2rem;
+}
+
+main .about-version {
+   margin-top: 0;
+   font-size: 0.9rem;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+main .about-description {
+   line-height: 1.7;
+}
+
+/*--- Table ---*/
+
+main table tbody tr {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+main table tbody tr:last-child {
+   border-bottom: none;
+}
+
+main table tbody td {
+   padding-left: 0;
+}
+
+/*--- Form ---*/
+
+main .input-field input, main .input-field textarea {
+   color: #fff;
+}
+
+main .input-field > input:focus + label, main .input-field > textarea:focus + label {
+   color: #f39c12 !important;
+}
+
+main .input-field > input:focus, main .input-field > textarea:focus {
+   border-bottom: 1px solid #f39c12 !important;
+   box-shadow: 0 1px 0 0 #f39c12 !important;
+}
+
+main form button.btn, main form button.btn:hover, main form button.btn:focus {
+   background-color:#f39c12;
+}
+
+/*--- Responsive ---*/
+
+@media (max-width: 992px) {
+   .card .card-image img {
+      height: 250px;
+   }
+}
+
+@media (max-width: 600px) {
+   .card .card-image img {
+      height: 200px;
+   }
+   .title-description {
+      margin: 0;
+   }
+   .navigation .btn {
+      font-size: 0.8rem;
+   }
+}
+
+@media (max-width: 450px) {
+   .card .card-image img {
+      height: 170px;
+   }
+}
+
+@media (max-width: 370px) {
+   .card .card-image img {
+      height: 130px;
+   }
+   .navigation .btn i {
+      display: none;
+   }
+}
+
+/*---------- Footer Style ----------*/
+
+.page-footer {
+   padding: 0;
+   border-top: 2px solid rgb(243, 156, 18, 0.5);
+   background: transparent;
+}
+
+.page-footer a {
+   color: rgba(255, 255, 255, 0.5);
+   transition: 0.3s;
+}
+
+.page-footer a:hover {
+   color: rgba(255, 255, 255, 1);
+}
+
+.page-footer .footer-copyright {
+   background: transparent;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-copyright p {
+   display: inline;
+}
